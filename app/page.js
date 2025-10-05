@@ -169,7 +169,7 @@ export default function Portfolio() {
         <ul className="space-y-2">
           <li>🐙 GitHub: <a href="https://github.com/joeldsouza28" className="text-cyan-400">joeldsouza28</a></li>
           <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/joeldsouza28/" className="text-cyan-400">linkedin.com/in/joeldsouza28</a></li>
-          <li>✍️ Medium: <a href="http://medium.com/joeldsouza28" className="text-cyan-400">medium.com/@joeldsouza28</a></li>
+          <li>✍️ Medium: <a href="http://medium.com/@joeldsouza28" className="text-cyan-400">medium.com/@joeldsouza28</a></li>
           <li>✉️ Email: <span className="text-gray-400">joel.rdsouza@yahoo.in</span></li>
         </ul>
       </section>
