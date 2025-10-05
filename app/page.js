@@ -17,43 +17,36 @@ export default function Portfolio() {
   return (
     <div className={`${darkMode ? "bg-slate-900 text-gray-200" : "bg-gray-100 text-gray-900"} min-h-screen font-sans transition-colors duration-500`}>
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-6 py-4 border-b border-slate-700">
-        <h1 className="text-xl font-bold text-cyan-400">Joel Dsouza</h1>
-        <ul className="flex gap-6">
+      <nav className="flex flex-wrap justify-between items-center px-4 py-3 border-b border-slate-700">
+        <h1 className="text-lg sm:text-xl font-bold text-cyan-400">Joel Dsouza</h1>
+        <ul className="flex flex-wrap gap-4 text-gray-300 text-sm sm:text-base mt-2 sm:mt-0">
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="ml-6 px-3 py-1 rounded-md border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition"
-        >
-          {darkMode ? "Light" : "Dark"} Mode
-        </button>
       </nav>
 
-      {/* Hero Section */}
-      <section className="px-8 py-20 text-center">
-        <p className="text-cyan-400 text-lg">&gt; whoami</p>
-        <h2 className="text-4xl font-bold mt-2">Joel Dsouza — DevOps & Cloud Engineer ☁️</h2>
-        <p className="mt-3 text-lg text-gray-400">Automating Infrastructure | Scaling Kubernetes | Observing Systems</p>
 
-        <div className="flex justify-center gap-6 mt-6 text-2xl">
-          <a href="https://github.com/joeldsouza28" target="_blank"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/joeldsouza28/" target="_blank"><FaLinkedin /></a>
-          <a href="http://medium.com/joeldsouza28" target="_blank"><FaMedium /></a>
-          <a href="https://twitter.com/" target="_blank"><FaTwitter /></a>
+      {/* Hero Section */}
+      <section className="px-4 sm:px-4 sm:px-8 py-12 sm:py-16 sm:py-20 text-center">
+        <p className="text-cyan-400 text-base sm:text-lg">&gt; whoami</p>
+        <h2 className="text-2xl sm:text-4xl font-bold mt-2">Joel Dsouza — DevOps & Cloud Engineer ☁️</h2>
+        <p className="mt-3 text-sm sm:text-lg text-gray-400">Automating Infrastructure | Scaling Kubernetes | Observing Systems</p>
+
+        <div className="flex justify-center gap-4 sm:gap-6 mt-6 text-xl sm:text-2xl flex-wrap">
+          {/* icons */}
         </div>
 
-        <p className="mt-4 text-sm text-green-400">Last deployed: {lastDeployed} ✅ via GitHub Actions</p>
+        <p className="mt-4 text-xs sm:text-sm text-green-400">Last deployed: {lastDeployed} ✅ via GitHub Actions</p>
       </section>
 
+
       {/* Skills Section */}
-      <section id="skills" className="px-8 py-16">
+      <section id="skills" className="px-4 sm:px-8 py-12 sm:py-16">
         <h3 className="text-2xl font-semibold mb-6">Core Skillset</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           <div className="bg-slate-800 p-6 rounded-xl">
             <h4 className="font-bold mb-3">🚀 Cloud & Infra</h4>
             <div className="flex flex-wrap gap-2">
@@ -84,7 +77,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section with Animation Toggle */}
-      <section id="projects" className="px-8 py-16">
+      <section id="projects" className="px-4 sm:px-8 py-12 sm:py-16">
         <h3 className="text-2xl font-semibold mb-6 flex justify-between items-center">
           Projects
           <button
@@ -136,7 +129,7 @@ export default function Portfolio() {
       </section>
 
       {/* Certifications Section */}
-      <section id="certifications" className="px-8 py-16">
+      <section id="certifications" className="px-4 sm:px-8 py-12 sm:py-16">
         <h3 className="text-2xl font-semibold mb-6">Certifications</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-slate-800 p-6 rounded-xl">
@@ -151,7 +144,7 @@ export default function Portfolio() {
       </section>
 
       {/* Blog Section with Animation */}
-      <section id="blog" className="px-8 py-16">
+      <section id="blog" className="px-4 sm:px-8 py-12 sm:py-16">
         <h3 className="text-2xl font-semibold mb-6">Latest Articles</h3>
         <AnimatePresence>
           <motion.div
@@ -171,20 +164,21 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="px-8 py-16">
+      <section id="contact" className="px-4 sm:px-8 py-12 sm:py-16">
         <h3 className="text-2xl font-semibold mb-6">Contact</h3>
         <ul className="space-y-2">
           <li>🐙 GitHub: <a href="https://github.com/joeldsouza28" className="text-cyan-400">joeldsouza28</a></li>
           <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/joeldsouza28/" className="text-cyan-400">linkedin.com/in/joeldsouza28</a></li>
-          <li>✍️ Medium: <a href="http://medium.com/joeldsouza28" className="text-cyan-400">medium.com/joeldsouza28</a></li>
-          <li>✉️ Email: <span className="text-gray-400">(your email here)</span></li>
+          <li>✍️ Medium: <a href="http://medium.com/joeldsouza28" className="text-cyan-400">medium.com/@joeldsouza28</a></li>
+          <li>✉️ Email: <span className="text-gray-400">joel.rdsouza@yahoo.in</span></li>
         </ul>
       </section>
 
       {/* Footer */}
-      <footer className="text-center py-6 border-t border-slate-700 text-gray-500 text-sm">
-        © 2025 Joel Dsouza | Built with ❤️ using Next.js + Tailwind | Deployed on Cloudflare
+      <footer className="text-center py-6 border-t border-slate-700 text-gray-500 text-xs sm:text-sm px-2">
+        © 2025 Joel Dsouza
       </footer>
+
     </div>
   );
 }
