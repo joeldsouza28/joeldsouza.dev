@@ -157,7 +157,7 @@ export default function Portfolio() {
             <div className="bg-slate-800 p-6 rounded-xl">
               <h4 className="font-bold">Deploying FastAPI with GitHub Actions and Cloud Run</h4>
               <p className="text-gray-400">Oct 2025 | DevOps, GCP, FastAPI</p>
-              <a href="http://medium.com/joeldsouza28" target="_blank" className="text-cyan-400">Read on Medium</a>
+              <a href="http://medium.com/@joeldsouza28" target="_blank" className="text-cyan-400">Read on Medium</a>
             </div>
           </motion.div>
         </AnimatePresence>
