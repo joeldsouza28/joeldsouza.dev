@@ -140,7 +140,7 @@ export default function Portfolio() {
             <p className="text-gray-400">CNCF | 2024</p>
           </div>
           <div className="bg-slate-800 p-6 rounded-xl">
-            <h4 className="font-bold"><a href="https://www.credly.com/badges/9386558a-4779-4ab8-bdf5-9374414f31cf/email">☁️ GCP Associate Cloud Engineer</a></h4>
+            <h4 className="font-bold"><a href="https://www.credly.com/badges/9386558a-4779-4ab8-bdf5-9374414f31cf/email" target="_blank" className="text-cyan-400">☁️ GCP Associate Cloud Engineer</a></h4>
             <p className="text-gray-400">Google Cloud | 2024</p>
           </div>
         </div>
