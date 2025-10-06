@@ -90,20 +90,19 @@ export default function Portfolio() {
               transition={{ duration: 0.5 }}
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
+
               <div className="bg-slate-800 p-6 rounded-xl">
-                <h4 className="font-bold text-lg">QubeMech</h4>
-                <p className="mt-2 text-gray-400">Multi-cloud Kubernetes cluster orchestrator</p>
+                <h4 className="font-bold text-lg">Deploying FastAPI with GitHub Actions and Cloud Run</h4>
+                <p className="mt-2 text-gray-400"></p>
                 <div className="flex flex-wrap gap-2 mt-3">
                   {["Python", "Terraform", "Azure", "GCP"].map(tag => (
                     <span key={tag} className="bg-slate-700 px-3 py-1 rounded-md text-sm">{tag}</span>
                   ))}
                 </div>
                 <div className="flex gap-4 mt-4">
-                  <a href="https://github.com/joeldsouza28/qubemech" target="_blank" className="text-cyan-400">View Repo</a>
-                  <a href="https://medium.com/@joeldsouza28/how-i-attempted-to-build-a-multi-cloud-management-system-using-terraform-and-fastapi-8b737d4c8424" target="_blank" className="text-cyan-400">Read on Medium</a>
+                  <a href="https://github.com/joeldsouza28/gcp-fastapi-cicd-pipeline" target="_blank" className="text-cyan-400">View Repo</a>
                 </div>
               </div>
-
               <div className="bg-slate-800 p-6 rounded-xl">
                 <h4 className="font-bold text-lg">One Minute ELK</h4>
                 <p className="mt-2 text-gray-400">One-command ELK + Filebeat setup in Kubernetes</p>
@@ -115,6 +114,19 @@ export default function Portfolio() {
                 <div className="flex gap-4 mt-4">
                   <a href="https://github.com/joeldsouza28/one-minute-elk" target="_blank" className="text-cyan-400">View Repo</a>
                   <a href="https://medium.com/aws-in-plain-english/one-minute-elk-stack-on-kubernetes-full-logging-setup-with-a-single-script-ba92aecb4379" target="_blank" className="text-cyan-400">Read on Medium</a>
+                </div>
+              </div>
+              <div className="bg-slate-800 p-6 rounded-xl">
+                <h4 className="font-bold text-lg">QubeMech</h4>
+                <p className="mt-2 text-gray-400">Multi-cloud Kubernetes cluster orchestrator</p>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {["Python", "Terraform", "Azure", "GCP"].map(tag => (
+                    <span key={tag} className="bg-slate-700 px-3 py-1 rounded-md text-sm">{tag}</span>
+                  ))}
+                </div>
+                <div className="flex gap-4 mt-4">
+                  <a href="https://github.com/joeldsouza28/qubemech" target="_blank" className="text-cyan-400">View Repo</a>
+                  <a href="https://medium.com/@joeldsouza28/how-i-attempted-to-build-a-multi-cloud-management-system-using-terraform-and-fastapi-8b737d4c8424" target="_blank" className="text-cyan-400">Read on Medium</a>
                 </div>
               </div>
             </motion.div>
