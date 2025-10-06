@@ -93,7 +93,7 @@ export default function Portfolio() {
 
               <div className="bg-slate-800 p-6 rounded-xl">
                 <h4 className="font-bold text-lg">Deploying FastAPI with GitHub Actions and Cloud Run</h4>
-                <p className="mt-2 text-gray-400"></p>
+                <p className="mt-2 text-gray-400">Simple CI/CD Setup with Github Actions + Infra Provision with Terraform</p>
                 <div className="flex flex-wrap gap-2 mt-3">
                   {["FastAPI", "Terraform", "GCP Cloud Run", "Github Actions"].map(tag => (
                     <span key={tag} className="bg-slate-700 px-3 py-1 rounded-md text-sm">{tag}</span>
