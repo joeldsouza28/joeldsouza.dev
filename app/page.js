@@ -39,7 +39,6 @@ export default function Portfolio() {
           {/* icons */}
         </div>
 
-        <p className="mt-4 text-xs sm:text-sm text-green-400">Last deployed: {lastDeployed} ✅ via GitHub Actions</p>
       </section>
 
 
