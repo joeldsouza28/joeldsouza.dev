@@ -32,7 +32,7 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section className="px-4 sm:px-4 sm:px-8 py-12 sm:py-16 sm:py-20 text-center">
         <p className="text-cyan-400 text-base sm:text-lg">&gt; whoami</p>
-        <h2 className="text-2xl sm:text-4xl font-bold mt-2">Joel Dsouza — DevOps & Cloud Engineer ☁️</h2>
+        <h2 className="text-2xl sm:text-4xl font-bold mt-2">Joel Dsouza — Software & DevOps Engineer ☁️</h2>
         <p className="mt-3 text-sm sm:text-lg text-gray-400">Automating Infrastructure | Scaling Kubernetes | Observing Systems</p>
 
         <div className="flex justify-center gap-4 sm:gap-6 mt-6 text-xl sm:text-2xl flex-wrap">
