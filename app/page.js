@@ -78,15 +78,6 @@ export default function Portfolio() {
 
       {/* Projects Section with Animation Toggle */}
       <section id="projects" className="px-4 sm:px-8 py-12 sm:py-16">
-        <h3 className="text-2xl font-semibold mb-6 flex justify-between items-center">
-          Projects
-          <button
-            onClick={() => setShowProjects(!showProjects)}
-            className="px-3 py-1 border border-cyan-400 text-cyan-400 rounded-md hover:bg-cyan-400 hover:text-slate-900 transition"
-          >
-            {showProjects ? "Hide" : "Show"}
-          </button>
-        </h3>
         <AnimatePresence>
           {showProjects && (
             <motion.div
