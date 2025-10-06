@@ -78,6 +78,10 @@ export default function Portfolio() {
 
       {/* Projects Section with Animation Toggle */}
       <section id="projects" className="px-4 sm:px-8 py-12 sm:py-16">
+        <h3 className="text-2xl font-semibold mb-6 flex justify-between items-center">
+          Projects
+
+        </h3>
         <AnimatePresence>
           {showProjects && (
             <motion.div
