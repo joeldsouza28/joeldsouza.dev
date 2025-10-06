@@ -50,7 +50,7 @@ export default function Portfolio() {
           <div className="bg-slate-800 p-6 rounded-xl">
             <h4 className="font-bold mb-3">🚀 Cloud & Infra</h4>
             <div className="flex flex-wrap gap-2">
-              {["Kubernetes (GKE, EKS)", "Terraform", "AWS Lambda", "GCP Cloud Function"].map(skill => (
+              {["Kubernetes", "Terraform", "AWS", "GCP"].map(skill => (
                 <span key={skill} className="bg-slate-700 px-3 py-1 rounded-md text-sm">{skill}</span>
               ))}
             </div>
@@ -59,7 +59,7 @@ export default function Portfolio() {
           <div className="bg-slate-800 p-6 rounded-xl">
             <h4 className="font-bold mb-3">🔄 CI/CD & Monitoring</h4>
             <div className="flex flex-wrap gap-2">
-              {["Jenkins", "GitHub Actions", "SigNoz"].map(skill => (
+              {["Jenkins", "GitHub Actions", "ELK Stack", "CloudWatch", "Signoz"].map(skill => (
                 <span key={skill} className="bg-slate-700 px-3 py-1 rounded-md text-sm">{skill}</span>
               ))}
             </div>
@@ -68,7 +68,7 @@ export default function Portfolio() {
           <div className="bg-slate-800 p-6 rounded-xl">
             <h4 className="font-bold mb-3">💻 Backend Dev</h4>
             <div className="flex flex-wrap gap-2">
-              {["Python", "FastAPI", "Django", "Node.js"].map(skill => (
+              {["Python", "FastAPI", "Django", "Node.js", "Express.js", "Celery"].map(skill => (
                 <span key={skill} className="bg-slate-700 px-3 py-1 rounded-md text-sm">{skill}</span>
               ))}
             </div>
@@ -106,7 +106,7 @@ export default function Portfolio() {
                 </div>
                 <div className="flex gap-4 mt-4">
                   <a href="https://github.com/joeldsouza28/qubemech" target="_blank" className="text-cyan-400">View Repo</a>
-                  <a href="http://medium.com/joeldsouza28" target="_blank" className="text-cyan-400">Read on Medium</a>
+                  <a href="https://medium.com/@joeldsouza28/how-i-attempted-to-build-a-multi-cloud-management-system-using-terraform-and-fastapi-8b737d4c8424" target="_blank" className="text-cyan-400">Read on Medium</a>
                 </div>
               </div>
 
@@ -120,7 +120,7 @@ export default function Portfolio() {
                 </div>
                 <div className="flex gap-4 mt-4">
                   <a href="https://github.com/joeldsouza28/one-minute-elk" target="_blank" className="text-cyan-400">View Repo</a>
-                  <a href="http://medium.com/joeldsouza28" target="_blank" className="text-cyan-400">Read on Medium</a>
+                  <a href="https://medium.com/aws-in-plain-english/one-minute-elk-stack-on-kubernetes-full-logging-setup-with-a-single-script-ba92aecb4379" target="_blank" className="text-cyan-400">Read on Medium</a>
                 </div>
               </div>
             </motion.div>
@@ -133,11 +133,14 @@ export default function Portfolio() {
         <h3 className="text-2xl font-semibold mb-6">Certifications</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-slate-800 p-6 rounded-xl">
-            <h4 className="font-bold">🧠 Certified Kubernetes Administrator (CKA)</h4>
+            <h4 className="font-bold">
+              <a href="https://www.credly.com/badges/6785000d-6562-458d-89a4-98239b5558ab/public_url" target="_blank" className="text-cyan-400">Certified Kubernetes Administrator (CKA)</a>
+
+            </h4>
             <p className="text-gray-400">CNCF | 2024</p>
           </div>
           <div className="bg-slate-800 p-6 rounded-xl">
-            <h4 className="font-bold">☁️ GCP Associate Cloud Engineer</h4>
+            <h4 className="font-bold"><a href="https://www.credly.com/badges/9386558a-4779-4ab8-bdf5-9374414f31cf/email">☁️ GCP Associate Cloud Engineer</a></h4>
             <p className="text-gray-400">Google Cloud | 2024</p>
           </div>
         </div>
